@@ -33,6 +33,13 @@ extension ViewController {
         style.isShowCover = true
         var childVCs = [UIViewController]()
         for i in 0..<titles.count {
+            
+            if i == 0 {
+                let vc = TestFrostedGlassViewController()
+                childVCs.append(vc)
+                continue
+            }
+            
             if i == 3 {
                 let vc = TestCollectionViewController()
                 childVCs.append(vc)
