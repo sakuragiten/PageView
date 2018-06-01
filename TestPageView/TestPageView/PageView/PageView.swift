@@ -59,10 +59,6 @@ extension PageView {
         contentView.delegate = self
         addSubview(contentView)
         
-        
-        
-        
-        
     }
 }
 

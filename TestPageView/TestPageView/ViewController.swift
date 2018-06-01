@@ -14,8 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
-
-
 }
 
 
@@ -28,14 +26,18 @@ extension ViewController {
         
         let titles = ["beautiful", "love", "All", "Falls", "Down", "Allen", "Walker", "When it don't work", "I'll be fine"]
         
-        
         let style = PageStyle()
         style.isScrollEnable = true
         style.isNeedScale = true
         style.isShowBottomLine = true
         style.isShowCover = true
         var childVCs = [UIViewController]()
-        for _ in 0..<titles.count {
+        for i in 0..<titles.count {
+            if i == 3 {
+                let vc = TestCollectionViewController()
+                childVCs.append(vc)
+                continue
+            }
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor.randomColor()
             childVCs.append(vc)
@@ -44,7 +46,6 @@ extension ViewController {
         let pageView = PageView(frame: pageFrame, titles: titles, style: style, childVCs: childVCs, parentController: self)
         
         view.addSubview(pageView)
-        
         
     }
 }

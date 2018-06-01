@@ -17,6 +17,8 @@
 		B0308B0E20B2B52A003A0B21 /* PageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0308B0D20B2B52A003A0B21 /* PageStyle.swift */; };
 		B0308B1020B2BD16003A0B21 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0308B0F20B2BD16003A0B21 /* PageTitleView.swift */; };
 		B0308B1220B2BD24003A0B21 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0308B1120B2BD24003A0B21 /* PageContentView.swift */; };
+		B05F90E920BFDC3400E46FEA /* GSFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F90E820BFDC3400E46FEA /* GSFlowLayout.swift */; };
+		B05F90ED20BFF3B500E46FEA /* TestCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F90EC20BFF3B500E46FEA /* TestCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		B0308B0D20B2B52A003A0B21 /* PageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageStyle.swift; sourceTree = "<group>"; };
 		B0308B0F20B2BD16003A0B21 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		B0308B1120B2BD24003A0B21 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		B05F90E820BFDC3400E46FEA /* GSFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSFlowLayout.swift; sourceTree = "<group>"; };
+		B05F90EC20BFF3B500E46FEA /* TestCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,9 @@
 		B0308AF520B2B2B3003A0B21 /* TestPageView */ = {
 			isa = PBXGroup;
 			children = (
+				B05F90E720BFD92900E46FEA /* FlowLayout */,
 				B0308B0820B2B2D0003A0B21 /* PageView */,
+				B05F90EA20BFF39F00E46FEA /* Test */,
 				B0308AF620B2B2B3003A0B21 /* AppDelegate.swift */,
 				B0308AF820B2B2B3003A0B21 /* ViewController.swift */,
 				B0308AFA20B2B2B3003A0B21 /* Main.storyboard */,
@@ -85,6 +91,30 @@
 				B0308B0B20B2B3EE003A0B21 /* UIColor+Extension.swift */,
 			);
 			path = PageView;
+			sourceTree = "<group>";
+		};
+		B05F90E720BFD92900E46FEA /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B05F90E820BFDC3400E46FEA /* GSFlowLayout.swift */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
+		B05F90EA20BFF39F00E46FEA /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B05F90EB20BFF39F00E46FEA /* Controllers */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		B05F90EB20BFF39F00E46FEA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B05F90EC20BFF3B500E46FEA /* TestCollectionViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +194,9 @@
 				B0308AF920B2B2B3003A0B21 /* ViewController.swift in Sources */,
 				B0308B1220B2BD24003A0B21 /* PageContentView.swift in Sources */,
 				B0308B0A20B2B3C0003A0B21 /* PageView.swift in Sources */,
+				B05F90E920BFDC3400E46FEA /* GSFlowLayout.swift in Sources */,
 				B0308AF720B2B2B3003A0B21 /* AppDelegate.swift in Sources */,
+				B05F90ED20BFF3B500E46FEA /* TestCollectionViewController.swift in Sources */,
 				B0308B0C20B2B3EE003A0B21 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
