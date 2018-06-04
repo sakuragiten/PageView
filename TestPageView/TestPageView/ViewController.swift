@@ -35,6 +35,12 @@ extension ViewController {
         for i in 0..<titles.count {
             
             if i == 0 {
+                let vc = TestBeautifulCameraViewController()
+                childVCs.append(vc)
+                continue
+            }
+            
+            if i == 1 {
                 let vc = TestFrostedGlassViewController()
                 childVCs.append(vc)
                 continue

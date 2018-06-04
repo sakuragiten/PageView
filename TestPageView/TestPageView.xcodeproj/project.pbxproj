@@ -21,6 +21,8 @@
 		B05F90E920BFDC3400E46FEA /* GSFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F90E820BFDC3400E46FEA /* GSFlowLayout.swift */; };
 		B05F90ED20BFF3B500E46FEA /* TestCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F90EC20BFF3B500E46FEA /* TestCollectionViewController.swift */; };
 		B05F90EF20C1388600E46FEA /* TestFrostedGlassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F90EE20C1388600E46FEA /* TestFrostedGlassViewController.swift */; };
+		B05F90F220C50E6100E46FEA /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B05F90F120C50E6100E46FEA /* test.jpg */; };
+		B05F90F420C5164000E46FEA /* TestBeautifulCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F90F320C5164000E46FEA /* TestBeautifulCameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		B05F90E820BFDC3400E46FEA /* GSFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSFlowLayout.swift; sourceTree = "<group>"; };
 		B05F90EC20BFF3B500E46FEA /* TestCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewController.swift; sourceTree = "<group>"; };
 		B05F90EE20C1388600E46FEA /* TestFrostedGlassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFrostedGlassViewController.swift; sourceTree = "<group>"; };
+		B05F90F120C50E6100E46FEA /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		B05F90F320C5164000E46FEA /* TestBeautifulCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBeautifulCameraViewController.swift; sourceTree = "<group>"; };
 		B60316F7AF9E73AFCB662329 /* Pods-TestPageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPageView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestPageView/Pods-TestPageView.debug.xcconfig"; sourceTree = "<group>"; };
 		EAA8A3E2CC3B4BA1190D5298 /* Pods-TestPageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPageView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestPageView/Pods-TestPageView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +126,7 @@
 		B05F90EA20BFF39F00E46FEA /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				B05F90F020C50E5B00E46FEA /* Resources */,
 				B05F90EB20BFF39F00E46FEA /* Controllers */,
 			);
 			path = Test;
@@ -132,8 +137,17 @@
 			children = (
 				B05F90EC20BFF3B500E46FEA /* TestCollectionViewController.swift */,
 				B05F90EE20C1388600E46FEA /* TestFrostedGlassViewController.swift */,
+				B05F90F320C5164000E46FEA /* TestBeautifulCameraViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B05F90F020C50E5B00E46FEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B05F90F120C50E6100E46FEA /* test.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		C13152BAAACD7EC34B4B59B4 /* Frameworks */ = {
@@ -208,6 +222,7 @@
 				B0308B0120B2B2B3003A0B21 /* LaunchScreen.storyboard in Resources */,
 				B0308AFE20B2B2B3003A0B21 /* Assets.xcassets in Resources */,
 				B0308AFC20B2B2B3003A0B21 /* Main.storyboard in Resources */,
+				B05F90F220C50E6100E46FEA /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +277,7 @@
 				B0308AF920B2B2B3003A0B21 /* ViewController.swift in Sources */,
 				B0308B1220B2BD24003A0B21 /* PageContentView.swift in Sources */,
 				B0308B0A20B2B3C0003A0B21 /* PageView.swift in Sources */,
+				B05F90F420C5164000E46FEA /* TestBeautifulCameraViewController.swift in Sources */,
 				B05F90E920BFDC3400E46FEA /* GSFlowLayout.swift in Sources */,
 				B0308AF720B2B2B3003A0B21 /* AppDelegate.swift in Sources */,
 				B05F90EF20C1388600E46FEA /* TestFrostedGlassViewController.swift in Sources */,

@@ -276,7 +276,8 @@ extension PageTitleView {
         
         let sourceLabel = titleLables[sourceIndex]
         let targetLabel = titleLables[targetIndex]
-        
+//        print("sourceIndex == %d , targetIndex == %d", sourceIndex, targetIndex)
+//        print("sourceIndex == " , sourceIndex , "targetIndex == ", targetIndex, "progress = ", progress)
         let colorData = (selectRGB.0 - normalRGB.0, selectRGB.1 - normalRGB.1, selectRGB.2 - normalRGB.2)
         
         sourceLabel.textColor = UIColor(r: selectRGB.0 - colorData.0 * progress, g: selectRGB.1 - colorData.1 * progress, b: selectRGB.2 - colorData.2 * progress)

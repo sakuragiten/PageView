@@ -120,18 +120,24 @@ extension PageContentView : UICollectionViewDelegate {
         if currentOffSetX > startOffSex {
             //左滑
             progress = currentOffSetX / scrollViewW - floor(currentOffSetX / scrollViewW)
-            sourceIndex = Int(currentOffSetX / scrollViewW)
-            targetIndex = sourceIndex + 1
+            if progress == 0 {
+                progress = 1
+                targetIndex = Int(currentOffSetX / scrollViewW)
+                sourceIndex = targetIndex - 1;
+            } else {
+                sourceIndex = Int(currentOffSetX / scrollViewW)
+                targetIndex = sourceIndex + 1
+            }
             
             if targetIndex >= childVCs.count {
                 targetIndex = childVCs.count - 1
             }
             
             //如果滑出去
-            if currentOffSetX - startOffSex >= scrollViewW {
-                progress = 1
-                targetIndex = sourceIndex
-            }
+//            if currentOffSetX - startOffSex >= scrollViewW {
+//                progress = 1
+//                targetIndex = sourceIndex
+//            }
         } else {
             //右滑
             progress = 1 - (currentOffSetX / scrollViewW - floor(currentOffSetX / scrollViewW))
