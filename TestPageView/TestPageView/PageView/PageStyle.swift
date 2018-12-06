@@ -16,7 +16,7 @@ class PageStyle: NSObject {
     
     ///未选中的title颜色
     var normalColor = UIColor(r: 0, g: 0, b: 0)
-    
+     
     ///选中的title颜色
     var selectColor = UIColor(r: 255, g: 127, b: 0)
     

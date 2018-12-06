@@ -30,7 +30,7 @@ class TestCollectionViewController: UIViewController {
     fileprivate lazy var cellCount:Int = 30
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
         
         view.addSubview(collectionView)
         
